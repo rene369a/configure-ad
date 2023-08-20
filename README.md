@@ -95,7 +95,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <br />
 
 <p>
-  
+  <img width="1670" alt="Screenshot 2023-08-20 at 12 59 05 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/000093eb-1158-42ab-a86b-1a96a0278469">
+
 </p>
 <p>
 - Install Active Directory (AD)
