@@ -24,10 +24,13 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Create Domain Controller Virtual Machine, using Windows Server 2022
+- Ensure Connectivity between client and Domain Controller
+- Install Active Directory (AD)
+- Create an Admin and Normal User Account in AD
+- Join Client to your domain
+- Setup Remote Desktop for non-administrative users on client computer
+- Create additional users and ensure login capabilities
 
 <h2>Deployment and Configuration Steps</h2>
 
