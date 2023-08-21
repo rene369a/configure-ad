@@ -95,7 +95,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <br />
 
 <p>
-<img width="1670" alt="Screenshot 2023-08-20 at 12 59 05 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/000093eb-1158-42ab-a86b-1a96a0278469">
+<img width="1670" alt="Screenshot 2023-08-20 at 12 59 05 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/ef4c9740-0bcc-405e-87e0-198fbb24f82d">
 <img width="1670" alt="Screenshot 2023-08-20 at 2 08 42 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/74f517cf-7b2a-4498-a10c-e88f508d6409">
 </p>
 <p>
