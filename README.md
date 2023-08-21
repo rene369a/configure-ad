@@ -110,7 +110,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
    <img width="1670" alt="Screenshot 2023-08-20 at 2 09 10 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/b69e3707-053e-4c3b-b475-0fa69b8465e0">
 <p>
   
-  - Promote as a DC: Set up a new forest as mydomain.com (can be anything, just remember what it is)
+  - Promote as a DC
+    - Set up a new forest as mydomain.com (can be anything, just remember what it is)
   - Restart and then log back into DC-1 as user: (domain)\labuser
 </p>
 <p>
