@@ -150,8 +150,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img width="1670" alt="Screenshot 2023-08-20 at 2 36 42 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/57759a97-db28-4b05-a899-52706a2eb94e">
 </p>
 <p>
-- Log out/close the Remote Desktop connection to DC-1
   
+  - Log out/close the Remote Desktop connection to DC-1
   - Log back in as “(domain)\jane_admin”
 </p>
 </p>
@@ -187,8 +187,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img width="1670" alt="Screenshot 2023-08-20 at 2 52 30 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/b60d52d1-d8bf-4c2a-b563-c9344a668172">
 </p>
 <p>
-- Log in to Domain Controller using Client-1
-
+ 
+  - Log in to Domain Controller using Client-1
   - Verify Client-1 shows up in Active Directory Users and Computers
 </p>
 <p>
@@ -226,7 +226,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
   
   - Create a new File and paste script into it
-    - (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
+      - (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
 </p>
 <p>
 <img width="1670" alt="Screenshot 2023-08-20 at 7 46 09 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/06f5b9c6-e763-4e79-94c5-b474e4456af3">
