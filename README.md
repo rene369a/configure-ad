@@ -240,7 +240,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img width="1670" alt="Screenshot 2023-08-20 at 7 54 28 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/a860ab76-4929-4e72-9afd-c3ebb1638919">
 </p>
 <p>
-- Attempt to log into Client-1 with one of the accounts (take note of the password in the script)
+  
+  - Attempt to log into Client-1 with one of the accounts (take note of the password in the script)
 </p>
 <p>
 <img width="1670" alt="Screenshot 2023-08-20 at 7 55 16 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/61f433a0-1abb-4521-9802-dae23ea929e6">
