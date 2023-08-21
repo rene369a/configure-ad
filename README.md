@@ -231,6 +231,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img width="1670" alt="Screenshot 2023-08-20 at 7 46 09 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/06f5b9c6-e763-4e79-94c5-b474e4456af3">
 </p>
 <p>
+  
   - Run the script and observe the accounts being created
   - Open ADUC and observe the accounts in the appropriate OU
 </p>
@@ -244,5 +245,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 <img width="1670" alt="Screenshot 2023-08-20 at 7 55 16 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/61f433a0-1abb-4521-9802-dae23ea929e6">
 <img width="1670" alt="Screenshot 2023-08-20 at 7 56 17 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/1ea37596-0958-462a-a0c7-72a1798ca17b">
+</p>
+<p>
+- Successful logins on Client computer
 </p>
 <br />
