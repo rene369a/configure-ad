@@ -82,6 +82,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
   
   - Loging to Domain Controller
   - Enable ICMPv4 on local windows firewall
+    - Sort by Protocol
   - Check Client-1 for successful ping
 </p>
 <p>
