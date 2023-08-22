@@ -163,6 +163,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Join Client-1 to your domain
 
   - From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
+    - Client-1
+    - Networking
+    - Network Interface: client-1577
   - From the Azure Portal, restart Client-1
 </p>
 <p>
