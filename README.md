@@ -22,7 +22,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>High-Level Deployment and Configuration Steps</h2>
 
 - Create Domain Controller Virtual Machine, using Windows Server 2022
-- Ensure Connectivity between Client and Domain Controller
+- Ensure Connectivity Between Client and Domain Controller
 - Install Active Directory (AD)
 - Create an Admin and Normal User Account in AD
 - Join Client to Your Domain
@@ -77,7 +77,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 <img width="1670" alt="Screenshot 2023-08-20 at 12 31 56 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/c72b4af6-3745-4f5a-84f5-50a7b95c84d6">
 
-### | Ensure Connectivity between Client and Domain Controller |
+### | Ensure Connectivity Between Client and Domain Controller |
   - Login to Client-1 with Remote Desktop
 <img width="1670" alt="Screenshot 2023-08-20 at 12 32 57 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/2ae267f5-b862-40ee-b659-5aaddee94f3f">
  
