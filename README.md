@@ -34,7 +34,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 <img width="1670" alt="Screenshot 2023-08-20 at 12 15 20 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/379377c6-a153-480b-b9ee-7a98138e004e">
 
-### Create Domain Controller Virtual Machine, using Windows Server 2022
+### | Create Domain Controller Virtual Machine, using Windows Server 2022 |
   - Note Resource Group created and Region
 <img width="1670" alt="Screenshot 2023-08-20 at 12 16 15 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/be9a7949-7647-42c7-bb9b-752b0f952efb">
     
@@ -73,7 +73,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 <img width="1670" alt="Screenshot 2023-08-20 at 12 31 56 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/c72b4af6-3745-4f5a-84f5-50a7b95c84d6">
 
-### Ensure Connectivity between client and Domain Controller
+### | Ensure Connectivity between Client and Domain Controller |
   - Login to Client-1 with Remote Desktop
 <img width="1670" alt="Screenshot 2023-08-20 at 12 32 57 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/2ae267f5-b862-40ee-b659-5aaddee94f3f">
  
@@ -96,7 +96,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 <img width="1670" alt="Screenshot 2023-08-20 at 12 59 05 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/ef4c9740-0bcc-405e-87e0-198fbb24f82d">
 
-###  Install Active Directory (AD)
+### | Install Active Directory (AD) |
   - Login to DC-1
     - Add roles and features
     - Check Active Directory Domain Services
@@ -119,7 +119,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 <img width="1670" alt="Screenshot 2023-08-20 at 2 23 36 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/c658b276-9dc3-4c95-8ab4-663afbfb0051">
 
-### Create an Admin and Normal User Account
+### | Create an Admin and Normal User Account |
   - In Active Directory Users and Computers
     - Create an Organizational Unit (OU) called “_EMPLOYEES”
     - Create a new OU named “_ADMINS”
@@ -160,27 +160,30 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 <img width="1670" alt="Screenshot 2023-08-20 at 2 40 11 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/bb6ace22-1b21-400f-82a6-a09e727c47c2">
 
-### Join Client-1 to your domain
+### | Join Client-1 to Your Domain |
   - From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
     - Client-1
     - Networking
     - Network Interface: client-1577
     - DNS servers
  <img width="1670" alt="Screenshot 2023-08-20 at 2 41 21 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/2ea039a0-8ab2-49f6-8663-3c8cdddb927f">
-</p>
-<p>
-<img width="1670" alt="Screenshot 2023-08-20 at 2 46 14 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/58de888e-0d71-4594-ae34-323b1fc7d1ca">
+ 
+  - Restart Client-1 VM from the Azure Portal
 </p>
 <br />
+<img width="1670" alt="Screenshot 2023-08-20 at 2 46 14 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/58de888e-0d71-4594-ae34-323b1fc7d1ca">
 
   - Login to Client-1 (Remote Desktop) as the original local admin (labuser)
   - Join it to the domain (computer will restart)
-  - Right click start menu
+    - Right click start menu
     - System
     - Rename This PC
-    - Login using (domain)jane_admin
 <p>
 <img width="1670" alt="Screenshot 2023-08-20 at 2 48 22 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/7ac34f21-7b2b-45eb-be74-7b5dcb87e8e2">
+
+  - It will ask for persmission to join the domain
+    - Login using (domain)jane_admin
+    - Computer will restart
 </p>
 <br />
 
@@ -189,67 +192,59 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <p>
  
-  - Log in to Domain Controller using Client-1
-  - Verify Client-1 shows up in Active Directory Users and Computers
+  - Log in to Domain Controller on Client-1
+    - Using Client-1 and the domain associated with the Domain Controller
 </p>
 <p>
 <img width="1670" alt="Screenshot 2023-08-20 at 2 54 03 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/4ceec213-7eea-487c-800d-1e52fba6db1d">
+   
+  - Verify Client-1 shows up in Active Directory Users and Computers
 </p>
 <br />
 
 <p>
 <img width="1670" alt="Screenshot 2023-08-20 at 7 01 02 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/6f7908b7-7558-487c-804b-53693b61c7ee">
+
+### | Setup Remote Desktop for Non-Administrative Users on Client-1 |
+  - Log into Client-1 as (domain)\jane_admin
+    - Open system properties
  </p>
 <p>
-- Setup Remote Desktop for non-administrative users on Client-1
-
-  - Log into Client-1 as (domain)\jane_admin and open system properties
-  - Navigate to "Remote Desktop"
-  - Allow “domain users” access to remote desktop
-  - You can log into Client-1 as a normal, non-administrative user 
-</p>
-<p>
 <img width="1670" alt="Screenshot 2023-08-20 at 7 07 34 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/4d6eefbe-090a-426f-8448-dafd09b9c1ad">
+
+  - Navigate to "Remote Desktop"
+    - Allow “domain users” access to remote desktop
+  - You can log into Client-1 as a normal, non-administrative user 
 </p>
 <br />
 
 <p>
 <img width="1670" alt="Screenshot 2023-08-20 at 7 44 53 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/1fb291cb-e1ee-4fd7-b853-297766620573">
-</p>
-<p>
-- Create additional users and attempt to log into Client-1
 
+### | Create Additional Users and Attempt to Log Into Client-1 |
   - Log into DC-1 as jane_admin
-  - Open Powershell ISE as an "Administrator"
-</p>
-<p>
+  - Open Powershell ISE as an "Administrator" 
 <img width="1670" alt="Screenshot 2023-08-20 at 7 45 56 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/5cd0aaa7-e46d-44a3-b0e4-25583779a481">
-<p>
-  
+   
   - Create a new File and paste script into it
       - (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
 </p>
 <p>
 <img width="1670" alt="Screenshot 2023-08-20 at 7 46 09 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/06f5b9c6-e763-4e79-94c5-b474e4456af3">
-</p>
-<p>
-  
+
   - Run the script and observe the accounts being created
-  - Open ADUC and observe the accounts in the appropriate OU
 </p>
 <p>
 <img width="1670" alt="Screenshot 2023-08-20 at 7 53 24 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/b1de9f04-8329-4f62-b5ac-4845a663aba3">
-<img width="1670" alt="Screenshot 2023-08-20 at 7 54 28 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/a860ab76-4929-4e72-9afd-c3ebb1638919">
-</p>
-<p>
   
-  - Attempt to log into Client-1 with one of the accounts (take note of the password in the script)
-</p>
-<p>
+  - Open ADUC and observe the accounts in the appropriate OU
+    - Attempt to log into Client-1 with one of the accounts (take note of the password in the script)
+<img width="1670" alt="Screenshot 2023-08-20 at 7 54 28 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/a860ab76-4929-4e72-9afd-c3ebb1638919">
 <img width="1670" alt="Screenshot 2023-08-20 at 7 55 16 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/61f433a0-1abb-4521-9802-dae23ea929e6">
 <img width="1670" alt="Screenshot 2023-08-20 at 7 56 17 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/1ea37596-0958-462a-a0c7-72a1798ca17b">
 </p>
-<p>
-- Successful logins on Client computer
+<p>  
+  
+  - Successful logins on Client computer
 </p>
 <br />
