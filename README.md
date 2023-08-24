@@ -58,7 +58,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
   
   - Windows 10 VM
   - Create username and password
-  - Use same Resource Group, Region and Vnet
+  - Use the same Resource Group, Region and Vnet
 </p>
 <p>
 <img width="1670" alt="Screenshot 2023-08-20 at 12 24 07 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/9875fe32-99d7-472f-846c-e5baeadc966c">
