@@ -22,12 +22,12 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>High-Level Deployment and Configuration Steps</h2>
 
 - Create Domain Controller Virtual Machine, using Windows Server 2022
-- Ensure Connectivity between client and Domain Controller
+- Ensure Connectivity between Client and Domain Controller
 - Install Active Directory (AD)
 - Create an Admin and Normal User Account in AD
-- Join Client to your domain
-- Setup Remote Desktop for non-administrative users on client computer
-- Create additional users and ensure login capabilities
+- Join Client to Your Domain
+- Setup Remote Desktop for Non-Administrative Users on Client Computer
+- Create Sdditional Users and Ensure Login Capabilities
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -205,7 +205,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 <img width="1670" alt="Screenshot 2023-08-20 at 7 01 02 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/6f7908b7-7558-487c-804b-53693b61c7ee">
 
-### | Setup Remote Desktop for Non-Administrative Users on Client-1 |
+### | Setup Remote Desktop for Non-Administrative Users on Client Computer |
   - Log into Client-1 as (domain)\jane_admin
     - Open system properties
  </p>
@@ -221,7 +221,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 <img width="1670" alt="Screenshot 2023-08-20 at 7 44 53 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/1fb291cb-e1ee-4fd7-b853-297766620573">
 
-### | Create Additional Users and Attempt to Log Into Client-1 |
+### | Create Additional Users and Ensure Login Capabilities |
   - Log into DC-1 as jane_admin
   - Open Powershell ISE as an "Administrator" 
 <img width="1670" alt="Screenshot 2023-08-20 at 7 45 56 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/5cd0aaa7-e46d-44a3-b0e4-25583779a481">
