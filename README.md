@@ -50,6 +50,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
     - Client-1
     - Networking
     - Network Interface: client-1577
+    - IP configuration
 </p>
 <br />
 
