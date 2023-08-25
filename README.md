@@ -53,6 +53,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
    - Click "Next: Disks"
    - Click "Next: Networking"
    - Note Virtual Network (Vnet) created
+     - "Review+Create"
+     - "Create" after validation
 <img width="1670" alt="Screenshot 2023-08-20 at 12 43 23 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/2e12f4a4-160b-404e-be07-2ad8f258d2bb">
    
   - Set Domain Controller’s NIC Private IP address to static
