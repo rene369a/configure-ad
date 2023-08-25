@@ -50,13 +50,15 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
   <img width="1670" alt="Screenshot 2023-08-20 at 12 18 13 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/9c805847-ff4f-4453-8167-60b3b0b54035">
 
+   - Click "Next: Disks"
+   - Click "Next: Networking"
    - Note Virtual Network (Vnet) created
 <img width="1670" alt="Screenshot 2023-08-20 at 12 43 23 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/2e12f4a4-160b-404e-be07-2ad8f258d2bb">
    
   - Set Domain Controller’s NIC Private IP address to static
     - DC-1
     - Networking
-    - Network Interface: client-1577
+    - Network Interface: dc-1678
     - IP configurations
 </p>
 <br />
@@ -72,6 +74,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
   
   - Create username and password
+    - Size: 2vCPUS
     - Check licensing box
 </p>
 <p>
@@ -98,6 +101,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img width="1670" alt="Screenshot 2023-08-20 at 12 48 02 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/6e3e90d2-d7bb-445c-adbc-b16780edba49">
  
    - Enable ICMPv4 on local windows firewall
+     - Search firewall
+     - Open Windows Defender Firewall with Advanced Security
+     - Inbound Rules
      - Sort by Protocol
 <img width="1670" alt="Screenshot 2023-08-20 at 12 52 45 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/122439ba-940b-4bac-bded-3e12013f18ca">
 
