@@ -36,6 +36,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 ### | Create Domain Controller Virtual Machine, using Windows Server 2022 |
   - Note Resource Group created and Region
+  - VM name:
+    - DC-1
 <img width="1670" alt="Screenshot 2023-08-20 at 12 16 15 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/be9a7949-7647-42c7-bb9b-752b0f952efb">
     
   - Create username and password
@@ -47,7 +49,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img width="1670" alt="Screenshot 2023-08-20 at 12 43 23 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/2e12f4a4-160b-404e-be07-2ad8f258d2bb">
    
   - Set Domain Controller’s NIC Private IP address to static
-    - Client-1
+    - DC-1
     - Networking
     - Network Interface: client-1577
     - IP configurations
