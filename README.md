@@ -69,7 +69,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img width="1670" alt="Screenshot 2023-08-20 at 12 22 30 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/7e2f44c6-c0b7-4d11-b93a-9ae35760ac82">
 
   - Create Client-1
-    - Windows 10 VM
+    - Image: Windows 10
     - Use the same Resource Group, Region
 <img width="1670" alt="Screenshot 2023-08-20 at 12 22 43 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/a425a424-232f-4af0-bd9d-3cbc4843dd16">
 </p>
