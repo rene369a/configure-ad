@@ -34,13 +34,18 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 <img width="1670" alt="Screenshot 2023-08-20 at 12 15 20 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/379377c6-a153-480b-b9ee-7a98138e004e">
 
-### | Create Domain Controller Virtual Machine, using Windows Server 2022 |
-  - Note Resource Group created and Region
-  - VM name:
-    - DC-1
+### | Create Domain Controller Virtual Machine, using Windows Server 2022 | 
+  - VM:
+    - Name: DC-1
+    - Image: Windows Server 2022
+    - Note Resource Group created
+    - Note Region
+
 <img width="1670" alt="Screenshot 2023-08-20 at 12 16 15 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/be9a7949-7647-42c7-bb9b-752b0f952efb">
     
   - Create username and password
+  - Size:
+    - 1vCPU (2vCPU might be better)
 </p>
 <p>
   <img width="1670" alt="Screenshot 2023-08-20 at 12 18 13 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/9c805847-ff4f-4453-8167-60b3b0b54035">
