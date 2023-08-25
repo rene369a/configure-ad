@@ -45,7 +45,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
     
   - Create username and password
   - Size:
-    - 1vCPU (2vCPU might be better)
+    - 1vCPU (large vCPU for faster Virtual Machine)
 </p>
 <p>
   <img width="1670" alt="Screenshot 2023-08-20 at 12 18 13 PM" src="https://github.com/rene369a/configure-ad/assets/142533276/9c805847-ff4f-4453-8167-60b3b0b54035">
